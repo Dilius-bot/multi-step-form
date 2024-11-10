@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multi Step Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-wrapper">
+                <div class="left-wrapper__steps-box steps">
+                    <div class="steps__circle active">1</div>
+                    <div class="steps__step-one">
+                        <span>Шаг 1</span>
+                        <br />
+                        Ваша информация
+                    </div>
+                </div>
+                <div class="left-wrapper__steps-box steps">
+                    <div class="steps__circle">2</div>
+                    <div class="steps__step-one">
+                        <span>Шаг 2</span>
+                        <br />
+                        Выберите тариф
+                    </div>
+                </div>
+                <div class="left-wrapper__steps-box steps">
+                    <div class="steps__circle">3</div>
+                    <div class="steps__step-one">
+                        <span>Шаг 3</span>
+                        <br />
+                        Выберите опции
+                    </div>
+                </div>
+                <div class="left-wrapper__steps-box steps">
+                    <div class="steps__circle">4</div>
+                    <div class="steps__step-one">
+                        <span>Шаг 4</span>
+                        <br />
+                        Итого
+                    </div>
+                </div>
+            </div>
+            <div class="right-wrapper">
+                <form id="regForm" action="">
+                    <!-- First step  -->
+                    <div class="right-wrapper__forms-box forms show">
+                        <div class="right-wrapper__title">
+                            <h3>Личная информация</h3>
+                            <p>
+                                Заполните Ваше имя, электронную почту и номер
+                                телефона
+                            </p>
+                        </div>
+                        <div class="forms__box">
+                            <div class="forms__items">
+                                <label for="name">Имя:</label> <br />
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Иван"
+                                />
+                                <br />
+                            </div>
+                            <div class="forms__items">
+                                <label for="email">Электронная почта:</label>
+                                <br />
+                                <input
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    placeholder="example-form@example-form.ru"
+                                />
+                                <br />
+                            </div>
+                            <div class="forms__items">
+                                <label for="tel">Номер телефона:</label> <br />
+                                <input
+                                    type="text"
+                                    name="tel"
+                                    id="tel"
+                                    placeholder="+71234567890"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second step  -->
+                    <div class="right-wrapper__forms-box rates hide">
+                        <div class="right-wrapper__title">
+                            <h3>Выберите подписку</h3>
+                            <p>Оплата подписки производится раз в месяц</p>
+                        </div>
+                        <div class="rates__box">
+                            <div class="rates__items active">
+                                <p><span>Стандарт</span><br />199₽ в месяц</p>
+                            </div>
+                            <div class="rates__items">
+                                <p><span>Премиум</span><br />349₽ в месяц</p>
+                            </div>
+                        </div>
+                        <div class="rates__text rate">
+                            <div class="rate__standart hide">
+                                <p>
+                                    Вам будут доступны услуги предоставляемые в
+                                    рамках пакета стандарт
+                                </p>
+                            </div>
+                            <div class="rate__premium hide">
+                                <p>
+                                    Вам будут доступны услуги предоставляемые в
+                                    рамках пакета премиум
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third step  -->
+                    <div class="right-wrapper__forms-box options hide">
+                        <div class="right-wrapper__title">
+                            <h3>Выберите опции</h3>
+                            <p>
+                                Вы можете увеличить стандратное хранилище
+                                предоставляемое подпиской
+                            </p>
+                        </div>
+                        <div class="options__box">
+                            <div class="options__items items">
+                                <div class="items__check">
+                                    <input
+                                        type="checkbox"
+                                        id="standart"
+                                        name="standart"
+                                        checked
+                                    />
+                                    <label for="standart"
+                                        >Буст<br /><span
+                                            >+300GB облачного хранилища</span
+                                        ></label
+                                    >
+                                </div>
+                                <div class="items__price">+49₽ в месяц</div>
+                            </div>
+                            <div class="options__items items">
+                                <div class="items__check">
+                                    <input
+                                        type="checkbox"
+                                        id="premium"
+                                        name="premium"
+                                    />
+                                    <label for="premium"
+                                        >Мегабуст<br /><span
+                                            >+1TB облачного хранилища</span
+                                        ></label
+                                    >
+                                </div>
+                                <div class="items__price">+99₽ в месяц</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fourth step  -->
+                    <div class="right-wrapper__forms-box total hide">
+                        <div class="right-wrapper__title">
+                            <h3>Итого</h3>
+                            <p>Перед подтверждением проверьте информацию</p>
+                        </div>
+                        <div class="total__box">
+                            <div class="total-box-items">
+                                <div class="total__items items">
+                                    <div class="items__rates">Стандарт</div>
+                                    <div class="items__rates-price">
+                                        199₽ в месяц
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-div">
+                                <div class="hr-div__line"></div>
+                            </div>
+                            <div class="total-box-items">
+                                <div class="total__items items">
+                                    <div class="items__options">Мегабуст</div>
+                                    <div class="items__options-price">
+                                        +99₽ в месяц
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="forms__buttons-box buttons">
+                        <div class="buttons__prev show">
+                            <button class="prev">Назад</button>
+                        </div>
+                        <div class="buttons__next">
+                            <button class="next">Далее</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal__title">
+                        <h3>Спасибо!</h3>
+                    </div>
+                    <div class="modal__text">
+                        <p>
+                            Спасибо за подтверждение подписки. Мы надеемся Вам
+                            нравится наши услуги. Если у Вас есть вопросы
+                            присылайте их на example-form@example-form.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./src/js/main.js"></script>
+    </body>
+</html>
