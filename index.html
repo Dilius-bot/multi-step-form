@@ -86,27 +86,33 @@
                         </div>
                     </div>
                     <!-- Second step  -->
-                    <div class="right-wrapper__forms-box rates">
+                    <div class="right-wrapper__forms-box rates show">
                         <div class="right-wrapper__title">
                             <h3>Выберите подписку</h3>
                             <p>Оплата подписки производится раз в месяц</p>
                         </div>
                         <div class="rates__box">
-                            <div class="rates__items active">
-                                <p><span>Стандарт</span><br />199₽ в месяц</p>
+                            <div data-ratio="199" class="rates__items">
+                                <p>
+                                    <span class="rate-standart">Стандарт</span
+                                    ><br />199₽ в месяц
+                                </p>
                             </div>
-                            <div class="rates__items">
-                                <p><span>Премиум</span><br />349₽ в месяц</p>
+                            <div data-ratio="349" class="rates__items">
+                                <p>
+                                    <span class="rate-standart">Премиум</span
+                                    ><br />349₽ в месяц
+                                </p>
                             </div>
                         </div>
-                        <div class="rates__text rate">
-                            <div class="rate__standart show">
+                        <div class="rates__text">
+                            <div class="rates-box rate__standart">
                                 <p>
                                     Вам будут доступны услуги предоставляемые в
                                     рамках пакета стандарт
                                 </p>
                             </div>
-                            <div class="rate__premium hide">
+                            <div class="rates-box rate__premium">
                                 <p>
                                     Вам будут доступны услуги предоставляемые в
                                     рамках пакета премиум
@@ -129,8 +135,9 @@
                                     <input
                                         type="checkbox"
                                         id="standart"
-                                        name="standart"
-                                        checked
+                                        name="Буст"
+                                        value="49"
+                                        class="items__checkbox"
                                     />
                                     <label for="standart"
                                         >Буст<br /><span
@@ -145,7 +152,9 @@
                                     <input
                                         type="checkbox"
                                         id="premium"
-                                        name="premium"
+                                        name="Мегабуст"
+                                        value="99"
+                                        class="items__checkbox"
                                     />
                                     <label for="premium"
                                         >Мегабуст<br /><span
@@ -164,16 +173,16 @@
                             <p>Перед подтверждением проверьте информацию</p>
                         </div>
                         <div class="total__box">
-                            <div class="total-box-items">
+                            <!-- <div class="total-box-items">
                                 <div class="total__items items">
                                     <div class="items__rates">Стандарт</div>
                                     <div class="items__rates-price">
                                         199₽ в месяц
                                     </div>
                                 </div>
-                            </div>
-                            <div class="hr-div">
-                                <div class="hr-div__line"></div>
+                                <div class="hr-div">
+                                    <div class="hr-div__line"></div>
+                                </div>
                             </div>
                             <div class="total-box-items">
                                 <div class="total__items items">
@@ -182,12 +191,12 @@
                                         +99₽ в месяц
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- Buttons -->
                     <div class="forms__buttons-box buttons">
-                        <div class="buttons__prev show">
+                        <div class="buttons__prev">
                             <button class="prev">Назад</button>
                         </div>
                         <div class="buttons__next">

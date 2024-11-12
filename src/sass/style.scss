@@ -189,6 +189,9 @@ form {
         align-items: center;
         justify-content: center;
         background: $color-grey;
+        &:hover {
+            cursor: pointer;
+        }
         p {
             font-size: 14px;
             font-weight: 400;
@@ -248,7 +251,13 @@ form {
     }
 }
 
+.total-box-items {
+    position: relative;
+}
+
 .hr-div {
+    position: absolute;
+    top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
