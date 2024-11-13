@@ -229,7 +229,7 @@ form {
         input:hover {
             cursor: pointer;
         }
-        label {
+        p {
             font-size: 16px;
             font-weight: bold;
             span {
@@ -294,6 +294,10 @@ form {
     opacity: 0.8;
 }
 
+.invalid {
+    background-color: #ffdddd;
+}
+
 .button:disabled {
     cursor: not-allowed;
 }
@@ -306,6 +310,7 @@ form {
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
     &__content {
         width: 350px;
         background: $color-white;
@@ -316,11 +321,7 @@ form {
 
 .close-modal {
     z-index: -1;
-    background: $color-blue;
-}
-
-.open-modal {
-    z-index: 3;
+    background-color: $color-blue;
 }
 
 @media (max-width: 1199px) {
